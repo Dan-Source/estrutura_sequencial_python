@@ -1,5 +1,9 @@
 def mostrar_numero(num):
-    print("O numéro informado foi: {}".format(num))
+    return num
+    
+numero_inserido = int(input("Informe um número: "))
+numero_saida = mostrar_numero(numero_inserido)
 
-num = int(input("Informe um número: "))
-mostrar_numero(num)
+print(
+        "O numéro informado foi: [{}]".format(numero_saida)
+)

@@ -1,4 +1,7 @@
 def alo_mundo():
-    print("Alô Mundo.")
+    return "Alô Mundo. Mas aqui é Brasil."
 
-alo_mundo()
+
+hello_world = alo_mundo()
+
+print(hello_world)

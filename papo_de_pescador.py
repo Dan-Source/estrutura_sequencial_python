@@ -1,17 +1,14 @@
 def calcular_limite_peso(peso):
-    if peso <= 50:
-        print("Aproveite sua pesca, você não será taxado!")
     if peso > 50:
         excesso = peso - 50
         multa = excesso * 4
-        print("""
-                Você ecedeu o limite de 50 kg.
-                Ecesso: {:.2f} kg.
-                Multa: {:.2f}.
-            """
-        .format(excesso, multa))
+        msg = "Multa: {:.2f} | Excesso: {:.2f}".format(multa, excesso)
+        return msg
+    return "Aproveite sua pesca, você não será taxado!"
 
 
 peso_peixe = float(input("Quantos kg você pescou hoje: "))
 
-calcular_limite_peso(peso_peixe)
+msg = calcular_limite_peso(peso_peixe)
+
+print(msg)

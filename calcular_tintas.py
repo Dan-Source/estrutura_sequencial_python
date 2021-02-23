@@ -1,23 +1,13 @@
-def retornar_opcao(opcao):
-    if opcao  == 1:
-        return 18
-    if opcao == 2:
-        return 3.6
-    if opcao == 3:
-        return 'misto'
-        
 def dividir_metros_por_litros(metros):
     litros = metros // 6
     resultado = litros + (litros * 0.10)
     return resultado
 
-def calcular_quantidade_de_latas(litros, tipo):
-    latas = litros // 
-    resto = litros % tipo
-    if resto == 0:
-            return latas
-    elif resto > 0:
-        return latas + 1
+def calcular_quantidade_de_latas(litros):
+    latas = litros // 18
+    folga = litros * 0.10
+    latas = latas + folga
+    return latas + 1
 
 def calcular_quantidade_de_galoes(litros, tipo):
     latas = litros // tipo
@@ -58,6 +48,8 @@ def calcular_preco_da_tinta_mista(preco, latas):
 #     '''
 # ))
 metros = 114
+
+# Qualquer coisa usar um dicionário
 
 
 

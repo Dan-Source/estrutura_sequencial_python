@@ -1,8 +1,11 @@
 def converter_temperatura_fahrenheit_celsius(f):
-    t = 5*((f-32)/9)
-    print("Temperatura em Celsius: {:.2f}°"
-        .format(t))
-
+    temp = 5*((f-32)/9)
+    return temp
+    
 f = float(input("Insira uma temperatura fahrenheit: "))
 
-converter_temperatura_fahrenheit_celsius(f)
+temp = converter_temperatura_fahrenheit_celsius(f)
+
+print(
+    "Temperatura em Celsius: {:.2f}°".format(temp)
+)
